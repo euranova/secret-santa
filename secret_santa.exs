@@ -16,12 +16,12 @@ defmodule SecretSanta do
   end
 
   def pair([_ | _] = participants) do
+    participants = Enum.shuffle(participants)
+
     {:ok,
      participants
-     |> Enum.shuffle()
      |> EnumUtils.rotate_left()
-     |> Enum.zip(participants)
-    }
+     |> Enum.zip(participants)}
   end
 end
 
