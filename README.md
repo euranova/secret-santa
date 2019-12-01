@@ -2,13 +2,20 @@ Secret Santa ENX
 =================
 
 ## Requirements
-- python 3
+python 3 or Elixir 1.9
 
 ## Setup + Run
 Open the `people.txt` file and write on separate lines the names of people who
-wants to participate to the _Secret Santa_ game.
+want to participate to the _Secret Santa_ game.
 
-Then run the following command:
+Then run one of the following commands depending on the programming language you want to use:
+
+### Elixir
+```elixir
+elixir secret_santa.exs
+```
+
+### Python
 ```python
 python ./secret_santa.py
 ```
